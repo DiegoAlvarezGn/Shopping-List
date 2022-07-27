@@ -8,19 +8,21 @@
 header{
     background: linear-gradient(220.55deg, #3793FF 0%, #0017E4 100%);
 }
+
 .cabecero{
     padding: 15px 20px;
 }
+
 .icono img{
     vertical-align: middle;
     display: inline-block;
     width: 20%;
 }
+
 .icono{
     text-align: center;
     color: #fff;
     font-size: 30px;
-    font-weight: bold;
 }
 
 .total{
@@ -29,9 +31,17 @@ header{
     padding: 10px;
 }
 
+#total-valor{
+    margin: 0 auto;
+    width: 90%;
+    overflow: hidden;
+    white-space: initial;
+}
+
 .nuevoItem{
     padding: 15px;
 }
+
 .nuevoItem input{
     border: none;
     display: block;
@@ -40,10 +50,11 @@ header{
     padding:10px;
     border-radius: 7px;
 }
+
 .nuevoItem input:focus{
     border:0;
     outline: none;
-    border: 3px solid #aedd2b;
+    border: 2px solid #aedd2b;
 }
 
 .agregarItem{
@@ -59,14 +70,17 @@ header{
     border-radius: 7px;
     border: 1px solid #fff;
 }
+
 .agregarItem:active{
     background-color: #aedd2b;
 }
+
 .lista{
     margin-top: 20px;
     margin-bottom: 20px;
     min-height: 600px;
 }
+
 .elemento{
     padding: 5px;
     align-items: center;
@@ -87,6 +101,8 @@ header{
     display: inline-block;
     width: 20%;
     height: 100%;
+    overflow: hidden;
+    white-space: initial;
 }
 
 .elemento-descripcion{
@@ -96,24 +112,26 @@ header{
 .elemento-cantidad{
     width: 15%;
 }
+
 .elemento-total{
     width: 25%;
 }
+
 .elemento-eliminar{
     width: 10%;
     display: flex;
     text-align: center;
 }
 
-.elemento-atributo{
-    color: #02416d;
-    font-size: 10px;    
-}
-
 .elemento-eliminar ion-icon {
     margin: auto;
     font-size: 20px;
     color: rgb(61, 68, 70);
+}
+
+.elemento-atributo{
+    color: #02416d;
+    font-size: 10px;    
 }
 
 .aviso{

@@ -1,0 +1,31 @@
+header{
+    padding: 20px;
+}
+.icono img{
+    width: 7%;
+}
+#formulario{
+    margin: 0 auto;
+    width: 90%;
+}
+.nuevoItem input{
+    margin: 0;
+    display: inline-block;
+}
+#descripcion{
+    width: 45%;
+}
+#cantidad{
+    width: 27%;
+}
+#precio{
+    width: 26%;
+    float: right;
+}
+.agregarItem{
+    width: 100%;
+}
+
+.elemento{
+    width: 85%;
+}
