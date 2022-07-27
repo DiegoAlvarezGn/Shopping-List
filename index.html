@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/phone.css">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width:600px)">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width:800px)">
+</head>
+<body onload="cargarDatos()">
+    <header>
+        <div class="cabecero">
+            <div class="icono">
+                <img class="titulo" src="assets/carrito-de-compras.png" alt="carro de compras"/>
+                Lista de compras
+            </div>
+        </div>
+        <div class="total">
+            <div class="total-cantidad">
+                <h1 id="total-valor"></h1>
+            </div>
+        </div>
+        <form id="formulario" onsubmit="return false;" class="nuevoItem">
+            <input maxlength="10" id="descripcion" name="descripcion" type="text" placeholder="Descripción del producto">
+            <input id="cantidad" name="cantidad" type="number" placeholder="Cantidad (unidades o piezas)">
+            <input id="precio" step="any" name="precio" type="number" placeholder="Precio ($)">
+            <button onclick="agregarItem()" class="agregarItem">Agregar producto</button>
+        </form>
+    </header>
+    <main>
+        <div class="lista" id="listaItems">
+        </div>
+    </main>
+    <footer>
+        <div class="atribuciones">
+            Contenido creado por 
+            <a target="_blank" href="https://github.com/DiegoAlvarezGn">Diego Alvarez <img src="assets/github.png" alt="logo de Github"></a>
+            empleando 
+            <a target="_blank" href="https://ionic.io/ionicons" title="ionicons">Ionicons</a>
+            y
+            <a target="_blank" href="https://www.flaticon.es/iconos-gratis/carrito-de-compras" title="carrito de compras iconos">Flaticon</a>
+        </div>
+    </footer>
+    <script src="js/Item.js"></script>
+    <script src="js/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

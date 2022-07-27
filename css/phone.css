@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;;
+}
+
+header{
+    background: linear-gradient(220.55deg, #3793FF 0%, #0017E4 100%);
+}
+.cabecero{
+    padding: 15px 20px;
+}
+.icono img{
+    vertical-align: middle;
+    display: inline-block;
+    width: 20%;
+}
+.icono{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.total{
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.nuevoItem{
+    padding: 15px;
+}
+.nuevoItem input{
+    border: none;
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    padding:10px;
+    border-radius: 7px;
+}
+.nuevoItem input:focus{
+    border:0;
+    outline: none;
+    border: 3px solid #aedd2b;
+}
+
+.agregarItem{
+    display: block;
+    width: 90%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px;
+    color: #fff;
+    font-weight:700;
+    letter-spacing: 2px;
+    margin: 10px auto 0px auto;
+    border-radius: 7px;
+    border: 1px solid #fff;
+}
+.agregarItem:active{
+    background-color: #aedd2b;
+}
+.lista{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 600px;
+}
+.elemento{
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 50px;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.elemento-descripcion,
+.elemento-precio,
+.elemento-cantidad,
+.elemento-total,
+.elemento-eliminar{
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+}
+
+.elemento-descripcion{
+    width: 30%;
+}
+
+.elemento-cantidad{
+    width: 15%;
+}
+.elemento-total{
+    width: 25%;
+}
+.elemento-eliminar{
+    width: 10%;
+    display: flex;
+    text-align: center;
+}
+
+.elemento-atributo{
+    color: #02416d;
+    font-size: 10px;    
+}
+
+.elemento-eliminar ion-icon {
+    margin: auto;
+    font-size: 20px;
+    color: rgb(61, 68, 70);
+}
+
+.aviso{
+    color: rgb(61, 68, 70);
+    display: block;
+    text-align: center;
+    padding: 50px;
+}
+
+.aviso ion-icon {
+    margin-top: 10px;
+    font-size: 50px;
+}
+
+footer{
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(216, 216, 216);;
+}
+footer img{
+    width: 15px;
+}
+footer a{
+    color: #02416d;
+    text-decoration: none;
+}
